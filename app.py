@@ -10,7 +10,7 @@ CORS(app)
 def hello():
     
     data = request.json
-    text = data['text']
+    text = data['clean_text']
     
     clean_data = clean_text_using_nlp(text)
 
